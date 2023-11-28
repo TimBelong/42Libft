@@ -6,7 +6,7 @@
 /*   By: ttulegal <ttulegal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 17:03:57 by ttulegal          #+#    #+#             */
-/*   Updated: 2023/11/13 17:18:12 by ttulegal         ###   ########.fr       */
+/*   Updated: 2023/11/21 16:49:32 by ttulegal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ static unsigned int	ft_number_size(int number)
 		number /= 10;
 		digits++;
 	}
+	return (digits);
 }
 
 char	*ft_itoa(int n)
@@ -35,7 +36,7 @@ char	*ft_itoa(int n)
 	char			*string;
 
 	digits = ft_number_size(n);
-	string = (char *)malloc(sizeof(char) * (digits +1));
+	string = (char *)malloc(sizeof(char) * (digits + 1));
 	if (string == NULL)
 		return (NULL);
 	if (n < 0)
@@ -46,11 +47,11 @@ char	*ft_itoa(int n)
 	else
 		number = n;
 	if (number == 0)
-		string[0] = 0;
+		string[0] = '0';
 	string[digits] = '\0';
 	while (number != 0)
 	{
-		string[digits -1] = (number % 10) + '0';
+		string[digits - 1] = (number % 10) + '0';
 		number /= 10;
 		digits--;
 	}

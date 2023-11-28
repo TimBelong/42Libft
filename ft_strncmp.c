@@ -6,7 +6,7 @@
 /*   By: ttulegal <ttulegal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 15:45:22 by ttulegal          #+#    #+#             */
-/*   Updated: 2023/10/31 16:50:29 by ttulegal         ###   ########.fr       */
+/*   Updated: 2023/11/21 16:35:21 by ttulegal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	const unsigned char	*unc2;
 	unsigned int		i;
 
+	if (!s1 || !s2)
+		return (0);
 	unc1 = (const unsigned char *)s1;
 	unc2 = (const unsigned char *)s2;
 	i = 0;

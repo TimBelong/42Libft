@@ -6,11 +6,15 @@
 /*   By: ttulegal <ttulegal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 13:32:49 by ttulegal          #+#    #+#             */
-/*   Updated: 2023/10/31 16:50:02 by ttulegal         ###   ########.fr       */
+/*   Updated: 2023/11/21 16:30:22 by ttulegal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+#include "libft.h"
+
+int	ft_isdigit(int symba)
 {
-	return ((c >= 48 && c <= 57));
+	if ('0' <= symba && symba <= '9')
+		return (1);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: ttulegal <ttulegal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:07:38 by ttulegal          #+#    #+#             */
-/*   Updated: 2023/10/31 16:49:08 by ttulegal         ###   ########.fr       */
+/*   Updated: 2023/11/28 14:51:09 by ttulegal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_itoa(int n);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void				ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 char				**ft_split(char const *s, char c);
 

@@ -6,7 +6,7 @@
 /*   By: ttulegal <ttulegal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 18:05:26 by ttulegal          #+#    #+#             */
-/*   Updated: 2023/11/13 17:19:03 by ttulegal         ###   ########.fr       */
+/*   Updated: 2023/11/21 16:22:28 by ttulegal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ static void	ft_allocate(char **tab, char const *s, char sep)
 			++tab_p;
 		}
 	}
-	*tab_p = 'NULL';
+	*tab_p = NULL;
 }
 
 char	**ft_split(char const *s, char c)

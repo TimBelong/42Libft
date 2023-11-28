@@ -6,7 +6,7 @@
 /*   By: ttulegal <ttulegal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:12:47 by ttulegal          #+#    #+#             */
-/*   Updated: 2023/11/08 16:35:06 by ttulegal         ###   ########.fr       */
+/*   Updated: 2023/11/21 16:44:00 by ttulegal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strdup(const char *s)
 {
-	size_t	i;
-	size_t	len;
-	char	*dup;
+	size_t		i;
+	size_t		len;
+	char		*dup;
 
 	len = ft_strlen(s);
 	dup = (char *)malloc(len + 1);
